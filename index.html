@@ -13,7 +13,7 @@
     <h1>REPERTOIRE</h1>
     <FORM>
         <SELECT name="nom" size="1">
-            <option></option>
+            <OPTION id="Bmenu"> Menu</OPTION>
             <OPTION id="Bliste">Liste</OPTION>
             <OPTION id="Bajout">Ajouter</OPTION>
             <OPTION id="Btotal">Voir le nombre de contact</OPTION>
@@ -21,22 +21,45 @@
         </SELECT>
     </FORM>
 </header>
-<div id="css"> lalalalala </div>
-<div id="java">manger </div>
-<div></div>
+
+    <section id="liste"> liste de contact </section>
+
+    <section id="ajout"> formulaite </section>
+
+    <section id="total">Nombre de contact XXX </section>
+
+
 
 
 <script>
-    document.getElementById('boutonC').addEventListener("click", function1);
+    
+    document.getElementById('Bmenu').addEventListener("click", function1);
     function function1() {
-        document.getElementById('css').style.display = 'block';
-        document.getElementById('java').style.display = 'none';
+        document.getElementById('liste').style.display = 'none';
+        document.getElementById('ajout').style.display = 'none';
+        document.getElementById('total').style.display = 'none';
     }
 
-    document.getElementById('boutonJ').addEventListener("click", function2);
+    document.getElementById('Bliste').addEventListener("click", function2);
+
     function function2() {
-        document.getElementById('java').style.display = 'block';
-        document.getElementById('css').style.display = 'none';
+        document.getElementById('liste').style.display = 'block';
+        document.getElementById('ajout').style.display = 'none';
+        document.getElementById('total').style.display = 'none';
+    }
+
+    document.getElementById('Bajout').addEventListener("click", function3);
+    function function3() {
+        document.getElementById('liste').style.display = 'none';
+        document.getElementById('ajout').style.display = 'block';
+        document.getElementById('total').style.display = 'none';
+    }
+
+    document.getElementById('Btotal').addEventListener("click", function4);
+    function function4() {
+        document.getElementById('liste').style.display = 'none';
+        document.getElementById('ajout').style.display = 'none';
+        document.getElementById('total').style.display = 'block';
     }
 </script>
 
