@@ -1,0 +1,45 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<contener>
+<header>
+    <h1>REPERTOIRE</h1>
+    <FORM>
+        <SELECT name="nom" size="1">
+
+            <OPTION id="boutonC">Liste</OPTION>
+            <OPTION id="boutonJ">Ajouter</OPTION>
+            <OPTION value="">Voir le nombre de contact</OPTION>
+
+        </SELECT>
+    </FORM>
+</header>
+<div id="css"> lalalalala </div>
+<div id="java">manger </div>
+<div></div>
+
+
+<script>
+    document.getElementById('boutonC').addEventListener("click", function1);
+    function function1() {
+        document.getElementById('css').style.display = 'block';
+        document.getElementById('java').style.display = 'none';
+    }
+
+    document.getElementById('boutonJ').addEventListener("click", function2);
+    function function2() {
+        document.getElementById('java').style.display = 'block';
+        document.getElementById('css').style.display = 'none';
+    }
+</script>
+
+
+</body>
+</html>
