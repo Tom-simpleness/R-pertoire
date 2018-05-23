@@ -10,10 +10,10 @@
 </head>
 <body>
 <header>
-    <h1>REPERTOIRE</h1>
+    <h1>AGENDEX</h1>
     <FORM>
         <SELECT name="nom" size="1">
-            <OPTION id="Bmenu"> Menu</OPTION>
+            <OPTION id="Bmenu" selected> Menu</OPTION>
             <OPTION id="Bliste">Liste</OPTION>
             <OPTION id="Bajout">Ajouter</OPTION>
             <OPTION id="Btotal">Voir le nombre de contact</OPTION>
@@ -41,7 +41,7 @@
             <label for="input3">06 Pleaaaaaase!!!</label>
             <input type="number" id="input3" value="">
         </div>
-        <input type=button id="bFormulaire" value="Ajouter"/>
+        <input class="button" type=button id="bFormulaire" value="Ajouter"/>
     </form>
 
     </section>
@@ -50,7 +50,10 @@
 
 </script>
 
-    <section id="total">Nombre de contact XXX </section>
+    <section id="total">
+        <p>Vous avez <a id="clicks">0</a> PokéContacts.</p>
+        <img class="pikachu" src="https://vignette.wikia.nocookie.net/spongefan/images/7/77/Pikachu.png/revision/latest?cb=20170824143937" alt="pikachu">
+    </section>
 
 
 

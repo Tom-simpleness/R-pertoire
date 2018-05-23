@@ -2,25 +2,69 @@ input[type=number]{
     -moz-appearance: textfield;
 }
 
+@font-face {
+    font-family: 'pokemon_gbregular';
+    src: url('../font_family/pokemon_gb-webfont.woff2') format('woff2'), url('../font_family/pokemon_gb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body{
+    background-color:rgb(8, 64, 53);
     background-image: url("https://orig00.deviantart.net/95ef/f/2016/311/0/f/pokemon_twitch_theme_a_2a_by_masterq2-danm4kn.gif");
     background-size: cover;
     background-repeat: no-repeat;
-
+    color: rgb(110, 200, 116);
+    font-family:'pokemon_gbregular';
 }
+
 section {
     margin-left: 22%;
     display: none;
     height: 200px;
     width: 300px;
     overflow: auto;
-    border: 1px solid #666;
-    background-color: #ccc;
+    border: 2px solid #17663c;
+    background-color: rgb(8, 64, 53);
     padding: 8px;
+    border-radius:5px;
 
 }
 
 header {
     padding-left: 22%;
     padding-top: 5%;
+}
+
+#total{
+    text-align:center;
+}
+
+.pikachu{
+    width:30%;
+}
+
+.button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #a01b3e;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: #d51c4e;
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }

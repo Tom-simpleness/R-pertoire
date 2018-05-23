@@ -34,6 +34,8 @@ function function4() {
 
 var number = [];
 
+var clicks=0;
+
 document.getElementById("bFormulaire").addEventListener("click",myFunction)
 
 function myFunction()
@@ -51,5 +53,8 @@ function myFunction()
     document.getElementById("input3").value="";
 
     number.push(document.getElementById("input1").value);
+
+    clicks+=1;
+    document.getElementById("clicks").innerHTML=clicks;
 
 }
