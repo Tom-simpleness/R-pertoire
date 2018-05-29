@@ -1,64 +1,87 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Agendex</title>
     <link rel="stylesheet" href="CSS/style.css">
 
 </head>
 <body>
+
+<!---------------------------------------------Début Main---------------------------------------------------------------------->
+
+<main>
+
+<!--==========================================Début Header ==================================================================-->
+
 <header>
     <h1>AGENDEX</h1>
     <FORM>
         <SELECT name="nom" size="1">
-            <OPTION id="Bmenu" selected> Menu</OPTION>
+            <OPTION id="Bmenu" selected="selected"> Menu</OPTION>
             <OPTION id="Bliste">Liste</OPTION>
             <OPTION id="Bajout">Ajouter</OPTION>
-            <OPTION id="Btotal">Voir le nombre de contact</OPTION>
-
+            <OPTION id="Btotal">Nombre de contact</OPTION>
         </SELECT>
     </FORM>
 </header>
 
-    <section id="liste">
+<!--===========================================Début section menu ==========================================================-->
+
+    <section id="menu">
+        <p>Ta quête des Poké-Contacts commence ici. Un tout nouveau monde de rêves, d'aventures et de Poké-Contacts t'attend. <br> Bonne chance !</p>
+        <img class="chen" src="http://www.pokepedia.fr/images/2/21/Chen-anime-BW.png" alt="Professeur Chen">
+    </section>
+
+    <section class="liste" id="liste">
         <div id="box"></div>
     </section>
+
+<!--===========================================Début section Ajout=========================================================-->
 
     <section id="ajout">
 
         <form class="formContact">
         <div>
-            <label for="input1">Prénom et Nom: </label>
+            <label for="input1">Prénom: </label>
             <input type="text" id="input1" value="">
         </div>
         <div>
-            <label for="input2">E-mail: </label>
+            <label for="input2">Nom: </label>
             <input type="text" id="input2" value="">
         </div>
         <div>
-            <label for="input3">06 Pleaaaaaase!!!</label>
+            <label for="input3">Téléphone: </label>
             <input type="number" id="input3" value="">
         </div>
-        <input class="button" type=button id="bFormulaire" value="Ajouter"/>
+        <button class="button" type=button id="bFormulaire">Ajouter</button>
+        <div class="formImage">
+            <img class="starter" src="http://a54.idata.over-blog.com/4/28/82/62/pokmon_starter_1G.png" alt="carapuce,bulbizarre et salamèche">
+        </div>
     </form>
 
     </section>
 
-<script>
-
-</script>
+<!--============================================Début section Total=========================================================-->
 
     <section id="total">
-        <p>Vous avez <a id="clicks">0</a> PokéContacts.</p>
+        <p>Vous avez </p>
+        <a id="compteur">0</a><br>
+        <p> Poké-Contacts.</p>
         <img class="pikachu" src="https://vignette.wikia.nocookie.net/spongefan/images/7/77/Pikachu.png/revision/latest?cb=20170824143937" alt="pikachu">
     </section>
 
-
-
 <script src="JS/index1.js"></script>
+</main>
 
+<!--------------------------------------------------Section Aside--------------------------------------------------------------->
+
+<aside>
+    <img id="poke_ball" src="https://orig00.deviantart.net/f60e/f/2017/042/0/7/pokeball_gif_by_termatior0-dayo3ow.gif" alt="poké ball">
+</aside>
 
 </body>
 </html>

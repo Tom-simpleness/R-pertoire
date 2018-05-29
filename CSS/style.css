@@ -17,19 +17,49 @@ body{
     background-repeat: no-repeat;
     color: rgb(110, 200, 116);
     font-family:'pokemon_gbregular';
+    display:flex;
+}
+
+/*================================================Sections Principales============================================================*/
+
+main{
+    width:70%;
+}
+
+aside{
+    width:30%;
+    text-align:center;
+    margin-top:50px;
+}
+
+/*---------------------------------------------Partie Main-----------------------------------------------------------------*/
+
+h1{
+    letter-spacing: 15px;
+}
+
+SELECT{
+    -moz-appearance:none;
+    width:300px;
+    font-family:'pokemon_gbregular';
+    background-color:rgb(8, 64, 53) ;
+    border:2px solid #17663c;
+    color:rgb(110, 200, 116);
+    padding:5px;
+    border-radius:10px;
 }
 
 section {
     margin-left: 22%;
     display: none;
-    height: 200px;
+    height: 320px;
     width: 300px;
     overflow: auto;
     border: 2px solid #17663c;
     background-color: rgb(8, 64, 53);
     padding: 8px;
     border-radius:5px;
-
+    margin-top:10px;
 }
 
 header {
@@ -37,8 +67,45 @@ header {
     padding-top: 5%;
 }
 
+.chen{
+    width:25%;
+    margin-left:112.5px;
+}
+
+.formContact div{
+    padding:5px 5px;
+}
+
+input{
+    background-color:rgb(8, 64, 53);
+    border:2px solid #17663c;
+    border-radius:5px;
+    color: rgb(223, 223, 223);
+    width:80%;
+    font-family:'pokemon_gbregular';
+}
+
+.formImage{
+    text-align:right;
+}
+
+.starter{
+    width:65%;
+}
+
+hr{
+    background-color: #17663c;
+    border:0px;
+    height:2px;
+}
+
+.liste{
+    color:rgb(223, 223, 223);
+}
+
 #total{
     text-align:center;
+
 }
 
 .pikachu{
@@ -68,3 +135,18 @@ header {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
+#total {
+    font-size: medium;
+    color: #ffe007;
+}
+
+#clicks{
+    font-size: larger;
+}
+
+/*----------------------------------------------------Section Aside=======================================================*/
+
+#poke_ball{
+     width:229.5px;
+ }
